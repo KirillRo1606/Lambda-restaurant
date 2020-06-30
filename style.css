@@ -1,0 +1,418 @@
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+    font-family: YesevaOne;
+    src: url(./fonts/YesevaOne-Regular.ttf);
+}
+@font-face {
+    font-family: GentiumBookBasic;
+    src: url(./fonts/GentiumBookBasic-Bold.ttf);
+}
+
+@font-face {
+    font-family: Lato-Regular;
+    src: url(./fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url(./fonts/OpenSans-Bold.ttf);
+}
+
+body {
+    width: 1600px;
+    margin: 0;
+    position: relative;
+}
+
+.logo {
+    font-family: YesevaOne;
+    font-size: 46px;
+    text-transform: uppercase;
+}
+.logo a {
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+}
+
+.headMenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 21px;
+    color: #FFFFFF;
+    font-family: GentiumBookBasic-Bold;
+}
+.menuContainer {
+    display: flex;
+    align-items: center;
+}
+
+.headMenu a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.headMenu li {
+    margin-left: 30px;
+    display: inline;
+    cursor: pointer;
+}
+
+.headMenu a:hover {
+    border-top: 3px solid #FFFFFF;
+    padding-top: 59px;
+}
+
+header .socialLinks .fab {
+    color: #DAB33E;
+}
+
+.socialLinks i:hover {
+    color: #FFFFFF;
+}
+
+.fab {
+    margin-left: 10px; 
+    font-size: 21px;
+    color: #FFFFFF;
+}
+
+header {
+   display: flex;
+   justify-content: space-between;
+   padding: 47px 215px 86px 179px;
+   background: linear-gradient(rgba(0,0,0,0.7), rgba(255, 255, 255, 0));
+   position: absolute;
+   width: 100%;
+   box-sizing: border-box;
+}
+
+.homeSection {
+    background-image: url(img/promoBackground.png);
+    background-size: cover;
+    padding-top: 239px;
+    padding-bottom: 142px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homeSection h1 {
+    font-family: YesevaOne;
+    font-size: 90px;
+    color: rgba(255,255,255,0.9);
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.homeSectionButtons {
+    margin-top: 25px;
+}
+
+.homeSectionButtons a {
+    font-family: Lato-Regular;
+    font-size: 18px;
+    text-transform: uppercase;
+    color:rgb(255,255,255);
+    padding: 24px 52px 21px 52px;
+    margin-left: 15px;
+    margin-right: 14px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.homeSectionButtons a:first-child {
+    border: 1px solid rgb(0,0,0);
+    background: rgba(0,0,0,0.6);
+}
+
+.homeSectionButtons a:last-child {
+    border: 1px solid rgb(255,255,255);
+    background: rgba(255,255,255,0.3);
+}
+
+.homeSectionButtons a:first-child:hover, .homeSectionButtons a:last-child:hover {
+    background: rgba(218, 179, 62, 0.4);
+}
+
+.aboutSection {
+    background-image: url(img/pattern1.png);
+    display: flex;
+    padding: 55px 240px 30px 294px;
+}
+
+.aboutSectionLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 51px;
+}
+
+.aboutSectionLeft h1 {
+    color: rgb(204,153,0);
+    font-family: YesevaOne;
+    font-size: 36px;
+    /* reset margin-top */
+}
+
+.aboutSectionLeft p {
+    font-family: Lato-Regular;
+    font-size: 16px;
+    text-align: center;
+    color: rgb(76,76,76);
+    line-height: 25px;
+    margin-top: 25px;
+    /* reset margin-bottom */
+}    
+
+.pictureChief {
+    margin-top: 52px;
+    margin-left: 131px;
+}
+
+.pictureDish {
+    margin-left: 36px;
+}
+
+.ingredientsSection {
+    background-image: url(img/ingredientsBackground.png);
+    display: flex;
+    padding: 99px 215px 101px;
+    justify-content: flex-end;
+}
+
+.ingredientsSectionInformation {
+    background-image: url(img/IngredientsTextBackground.png);
+    color: rgb(255,255,255);
+    text-align: center;
+    padding: 84px 81px 82px;
+
+}
+
+.ingredientsSectionInformation h1 {
+    font-family: YesevaOne;
+    font-size: 36px; 
+    margin-bottom: 11px;
+}
+
+.ingredientsSectionInformation p {
+    font-family: Lato-Regular;
+    font-size: 16px; 
+    line-height: 22.2px;
+    margin-top: 11px;
+}
+
+.ingredientsSectionPictures {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 74px;
+}
+
+.ingredientsSectionPictures img{
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+.menuSection {
+    background-image: url(img/pattern2.png);
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 106px 272px 98px 270px;
+    text-align: center;
+}
+
+.menuSection h2 {
+  font-family: YesevaOne;
+  font-size: 36px;
+  color: rgb(204,153,0);
+  padding-bottom: 24px;
+  width: 432px;
+}
+
+.menuSection h3 {
+    font-family: YesevaOne;
+    font-size: 21px;
+    color: rgb(204,153,0);
+    display: inline;
+
+  }
+
+  .menuSection h4 {
+    font-family: Lato-Regular;
+    font-size: 14px;
+    color: rgb(248,250,250);
+    background-color:rgba(204,153,0,0.5);
+    padding: 4px 13px 3px 14px;
+    display: inline-block;
+    margin-left: 373px;
+    margin-top: 7px;
+  }
+
+.menuSection p {
+    font-family: Lato-Regular;
+    font-size: 16px;
+    color: rgba(0,0,0,0.7);
+    text-align: justify;
+    padding-top: 12px;
+}
+
+.specialOffer {
+    border: 1px solid rgba(204,153,0,0.5);
+    padding: 13px;
+}
+
+.menuPriceRow {
+    display: flex; 
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(204,153,0,0.3);
+    padding-bottom: 12px;
+    padding-top: 37px;
+}
+
+.menuSectionPosition {
+    flex: 0 0 0;
+}
+
+.menuSectionPosition:nth-child(3) {
+margin-top:70px;
+}
+
+.reviewsSection {
+  background-image: url(img/reviewsBackground.png);
+  display: flex; 
+  justify-content: space-between;
+  padding: 100px 414px;
+  text-align: center;
+  align-items: center;
+}
+
+.reviewsSectionInformation {
+  background-image: url(img/ReviewsTextBackground.png); 
+  display: inline-block; 
+  text-align: center;
+  height: 558px;
+  width: 771px;
+  
+}
+
+.reviewsSectionInformation > h2 {
+  font-size: 36px;
+  font-family: YesevaOne;
+  color: rgb(255,255,255);
+  margin-top: 82px;
+  margin-bottom: 20px;
+}
+
+.reviewsSectionInformation > p {
+  font-size: 25px;
+  font-family: GentiumBookBasic;
+  color: #DDE0DF;
+  text-align: center;
+  line-height: 40px;
+  padding-top: 25px;
+}
+
+.reviewsSectionInformation > p:first-of-type::before {
+    content: url(img/quote.png);
+    margin-right: 20px;
+    margin-left: ;
+}
+
+.reviewsSectionInformation  p:last-of-type {
+  color: #DDE0DF;
+  font-family: Lato-Regular;
+  font-size: 16px;
+}
+
+.reservationsSection {
+  background-image: url(img/pattern1.png);
+  display: flex;
+}
+
+.reservationsSection > img:first-of-type {
+  margin: 100px 30px 101px 215px;
+}    
+
+.reservationsSection > img:last-of-type {
+  margin: 100px 99px 101px 0px;
+}
+
+.reservationsInfoSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 95px;
+  margin-bottom: 101px;
+}
+
+.reservationsInfoSection > h2 {
+  color: rgb(204,153,0);
+  font-family: YesevaOne;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.reservationsInfoSection > p:first-of-type {
+  font-family: Lato-Regular;
+  font-size: 16px; 
+  line-height: 22.2px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 46px;
+}
+
+.reservationsInfoSection > a {
+    font-family: Lato-Regular;
+    font-size: 16px;
+    text-align: center;
+    color: rgb(255,255,255);
+    padding: 12px 60px 12px 64px;
+    background:rgb(204,153,0);
+    cursor: pointer;  
+}
+
+.reservationsInfoSection a:hover {
+    background: rgba(218, 179, 62, 0.7);
+}  
+
+footer {
+    background: rgb(0,0,0);
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.footerSectionColumn {
+    font-size: 16px;
+    text-align: center;
+    color: rgb(255,255,255);
+    font-family: OpenSans-Bold;
+}
+
+.footerSectionColumn > h3 {
+    font-family: YesevaOne;
+    font-size: 21px;
+    margin-top: 62px;
+    margin-bottom: 21px;
+}
+
+.footerSectionColumn > p {
+    margin-top: 21px;
+    margin-bottom: 73px;
+}
